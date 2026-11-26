@@ -1,0 +1,17 @@
+-- CI/CD Migrator
+-- RICE       : TEST01
+-- Object     : TABLE PDT_OIC.TEST_MIGRATION
+-- Action     : CREATE
+-- Promoting  : PDT_OIC_DEV5 into PDT_OIC_DEV2
+-- Why        : New table.
+-- ----------------------------------------------------------
+
+CREATE TABLE "PDT_OIC"."TEST_MIGRATION" 
+   (	"COL1" VARCHAR2(10) COLLATE "USING_NLS_COMP", 
+	"COL2" DATE, 
+	"COL3" VARCHAR2(100) COLLATE "USING_NLS_COMP", 
+	"COL4" VARCHAR2(1000) COLLATE "USING_NLS_COMP", 
+	"COL5" VARCHAR2(700) COLLATE "USING_NLS_COMP", 
+	"COL6" NUMBER, 
+	"COL7" NUMBER
+   )  DEFAULT COLLATION "USING_NLS_COMP" ;
